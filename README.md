@@ -1,2 +1,3 @@
 # coding
-This repo is used to record everyday programming exercises.
+
+A repo recording my solutions for problems from different platforms.
