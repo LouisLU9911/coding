@@ -17,5 +17,8 @@
 # vscode
 .history
 
+# bazel
+bazel-*
+
 # temp files
 tmp-*
