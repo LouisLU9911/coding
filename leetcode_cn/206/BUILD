@@ -1,4 +1,4 @@
-cc_binary(
+cc_library(
     name = "206-cpp",
-    srcs = ["main.cpp"],
+    srcs = ["206.cpp"],
 )
