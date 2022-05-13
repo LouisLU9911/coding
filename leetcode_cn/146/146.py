@@ -1,3 +1,6 @@
+from typing import Dict, Optional
+
+
 class Node:
 
     def __init__(self, _key=None, _value=None, _pre=None, _next=None):
