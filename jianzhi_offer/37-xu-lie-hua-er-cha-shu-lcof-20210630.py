@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Codec:
 
     def serialize(self, root):
@@ -21,7 +22,6 @@ class Codec:
         else:
             return "null"
         return res
-        
 
     def deserialize(self, data):
         """Decodes your encoded data to tree.
@@ -36,15 +36,14 @@ class Codec:
             this_node, _ = self.gen_tree(nodes)
             return this_node
 
-
     def gen_tree(self, nodes):
         if nodes[0] == "null":
             return None, 1
         this_node = TreeNode(int(nodes[0]))
         this_node.left, left_len = self.gen_tree(nodes[1:])
-        this_node.right, right_len = self.gen_tree(nodes[1+left_len:])
+        this_node.right, right_len = self.gen_tree(nodes[1 + left_len:])
         return this_node, 1 + left_len + right_len
-        
+
 
 # Your Codec object will be instantiated and called as such:
 # codec = Codec()
