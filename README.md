@@ -1,3 +1,3 @@
 # coding
 
-A repo recording my solutions for problems from different platforms.
+A repo recording solutions of problems on different platforms.
